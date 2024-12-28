@@ -1,4 +1,4 @@
-SOURCE_DIR = my_package
+SOURCE_DIR = lbdb
 TEST_DIR = tests
 
 # code formatting and linting

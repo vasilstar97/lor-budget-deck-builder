@@ -3,7 +3,7 @@ requires = ["setuptools>=64.0"]
 build-backend = "setuptools.build_meta"
 
 [project] # метаданные проекта
-name = "my_package" # название вашего проекта
+name = "lbdb" # название вашего проекта
 version = "0.0.1"
 authors = [
     { name = "Vasilii Starikov", email = "vasilstar97@gmail.com" },
@@ -14,7 +14,10 @@ requires-python = ">=3.10"
 license = { file = "LICENCE" }
 
 dependencies = [ # здесь необходимо вести все устанавливаемые зависимости: пакеты, которые необходимы для адекватной работы вашей библиотеки
-    "geopandas>=1.0.0,<2.0.0",
+    "requests",
+    "pandas",
+    "matplotlib",
+    "tqdm",
 ]
 
 classifiers = [ # метаданные для описания проекта пользователям, например, на PyPI: какая лицензия, какое предназначение
@@ -25,7 +28,7 @@ classifiers = [ # метаданные для описания проекта п
 ]
 
 [tool.setuptools.packages.find] # что включать в сборку при установке
-include = ["my_package*"]
+include = ["lbdb*"]
 
 
 [project.optional-dependencies]
